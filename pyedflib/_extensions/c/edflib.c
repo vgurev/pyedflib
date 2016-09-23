@@ -2572,7 +2572,7 @@ static struct edfhdrblock * edflib_check_edf_file(FILE *inputfile, int *edf_erro
 
   edfhdr->hdrsize = edfhdr->edfsignals * 256 + 256;
 
-  fseeko(inputfile, 0LL, SEEK_END);
+  /*  fseeko(inputfile, 0LL, SEEK_END);
   if(ftello(inputfile)!=(edfhdr->recordsize * edfhdr->datarecords + edfhdr->hdrsize))
   {
     *edf_error = EDFLIB_FILE_CONTAINS_FORMAT_ERRORS;
@@ -2580,7 +2580,7 @@ static struct edfhdrblock * edflib_check_edf_file(FILE *inputfile, int *edf_erro
     free(edfhdr->edfparam);
     free(edfhdr);
     return(NULL);
-  }
+    }*/
 
   n = 0;
 
