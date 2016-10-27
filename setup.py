@@ -69,7 +69,8 @@ def get_version_info():
     if not ISRELEASED:
         FULLVERSION += '.dev0+' + GIT_REVISION[:7]
 
-    return FULLVERSION, GIT_REVISION
+    #return FULLVERSION, GIT_REVISION
+    return 'fix', GIT_REVISION
 
 
 def write_version_py(filename='pyedflib/version.py'):
