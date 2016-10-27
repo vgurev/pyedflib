@@ -149,7 +149,7 @@ if __name__ == '__main__':
             ext_modules = cythonize(ext_modules, compiler_directives=cythonize_opts)
             
     setup(
-        name="pyEDFlib",
+        name="pyEDFlib_fix",
         maintainer="Holger Nahrstaedt",
         maintainer_email="holgernahrstaedt@gmx.de",
         url="https://github.com/holgern/pyedflib",
